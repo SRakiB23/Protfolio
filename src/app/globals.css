@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f7fb;
+  --foreground: #111827;
+  --muted-foreground: #566277;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-border: rgba(15, 23, 42, 0.08);
+  --accent: #2563eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-surface: var(--surface);
+  --color-surface-border: var(--surface-border);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+.dark {
+  --background: #0b1120;
+  --foreground: #e5eefc;
+  --muted-foreground: #93a4bd;
+  --surface: rgba(15, 23, 42, 0.72);
+  --surface-border: rgba(148, 163, 184, 0.14);
+  --accent: #60a5fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  background-image:
+    radial-gradient(circle at top, rgba(37, 99, 235, 0.12), transparent 28%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08), transparent 25%);
+}
+
+a,
+button {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 28%, white);
+  color: var(--foreground);
+}
+
+.surface-panel {
+  border: 1px solid var(--surface-border);
+  background: var(--surface);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+  border-radius: 1.5rem;
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: var(--foreground);
+  color: var(--background);
+  padding: 0.875rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.button-primary:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid var(--surface-border);
+  background: color-mix(in srgb, var(--surface) 92%, white);
+  padding: 0.875rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.button-secondary:hover {
+  transform: translateY(-1px);
+  background: color-mix(in srgb, var(--surface) 84%, white);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid var(--surface-border);
+  background: color-mix(in srgb, var(--surface) 94%, white);
+  padding: 0.45rem 0.85rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
