@@ -5,6 +5,8 @@ export const siteConfig = {
     "Building production web applications and intelligent systems with a focus on product quality, developer velocity, and practical AI features.",
   availability: "Open to opportunities",
   email: "sazzadbasharrakib@gmail.com",
+  phone: "+8801328058242",
+  location: "Dhaka, Bangladesh",
   github: "https://github.com/SRakiB23",
   linkedin: "https://www.linkedin.com/in/md-sazzad-bashar-rakib",
   resumeHref: "/resume",
@@ -12,6 +14,39 @@ export const siteConfig = {
 
 export const about =
   "I started by building polished frontend experiences, then moved deeper into full-stack product engineering and AI-powered workflows. Today I enjoy shipping reliable user-facing applications, integrating external systems, and exploring how retrieval, search, and agents can solve real operational problems.";
+
+export const resumeSummary =
+  "AI-focused Full-Stack Software Engineer with 2+ years of experience across software delivery, client collaboration, product requirements, and technical solution design. Experienced in working with international stakeholders and cross-functional teams to translate business needs into practical technical solutions, with hands-on strengths in React, Next.js, Node.js, PostgreSQL, MongoDB, Supabase, Generative AI, RAG, vector search, and AI-powered workflows.";
+
+export const resumeExperience = [
+  {
+    company: "SJ Innovation LLC",
+    location: "Dhaka, Bangladesh",
+    title: "Junior Software Engineer (Full-Stack) - L3",
+    period: "Nov 2024 - Present",
+    note: "Promoted from Junior Software Engineer L1 to L3 in May 2026",
+    highlights: [
+      "Collaborate with clients, product stakeholders, and engineering teams to understand business requirements, clarify expectations, and translate needs into actionable technical solutions.",
+      "Act as a technical bridge between stakeholders and development teams by evaluating requirements, discussing technical feasibility, clarifying scope, and resolving implementation questions throughout delivery.",
+      "Contributed to the MySpaLive EMR platform by analyzing workflows, identifying product gaps, and proposing feature improvements based on user, client, and business needs.",
+      "Worked with international client stakeholders, including Johnson & Johnson, during DXP initiatives, supporting requirement discussions, technical clarification, and coordination across engineering implementation.",
+      "Researched and applied Generative AI, RAG, vector search, semantic retrieval, and hybrid search to explore intelligent retrieval and AI-powered application features.",
+      "Used modern AI tools extensively for research, requirement exploration, documentation, debugging, development, and productivity while critically validating outputs.",
+      "Developed and maintained production applications using React, Next.js, Node.js, Express, PostgreSQL, MongoDB, and Supabase while contributing to Agile delivery, code reviews, and cross-functional execution.",
+    ],
+  },
+  {
+    company: "SJ Innovation LLC",
+    location: "Dhaka, Bangladesh",
+    title: "Frontend Developer Intern",
+    period: "Jul 2024 - Oct 2024",
+    highlights: [
+      "Developed responsive UI elements using HTML5, CSS3, and JavaScript with strong cross-browser compatibility.",
+      "Conducted cross-device testing and refactoring, identifying and resolving 100+ UI bugs before production deployment.",
+      "Supported DXP initiatives involving Johnson & Johnson stakeholders through communication, requirement clarification, and frontend implementation.",
+    ],
+  },
+];
 
 export const experience = [
   {
@@ -57,6 +92,21 @@ export const stackGroups = [
   {
     title: "Tools",
     items: ["Git", "GitHub", "Stripe", "Firebase", "Slack"],
+  },
+];
+
+export const education = [
+  {
+    degree: "Bachelor of Science in Computer Science",
+    school: "Asia Pacific University of Technology and Innovation (APU / APIIT)",
+    location: "Kuala Lumpur, Malaysia",
+    year: "2023",
+  },
+  {
+    degree: "Bachelor of Science in Computer Science (Dual Degree Award)",
+    school: "De Montfort University",
+    location: "Leicester, UK",
+    year: "2023",
   },
 ];
 
