@@ -271,12 +271,14 @@ export const certifications = [
     issuer: "Anthropic",
     issued: "Jul 2026",
     credentialId: "62w9p9miged8",
+    href: "https://verify.skilljar.com/c/62w9p9miged8",
   },
   {
     title: "AI Capabilities and Limitations",
     issuer: "Anthropic",
     issued: "Jul 2026",
     credentialId: "ygin4gqrfwy4",
+    href: "https://verify.skilljar.com/c/ygin4gqrfwy4",
   },
   {
     title: "Introduction to Generative AI",
